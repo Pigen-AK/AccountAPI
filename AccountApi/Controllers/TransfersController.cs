@@ -46,14 +46,8 @@ namespace AccountApi.Controllers
 
             _context.AccountItems.Update(sourceAccount);
             _context.AccountItems.Update(destinationAccount);
-
-
-            //if (!transfer.ExecuteTransfer(sourceAccount))
-            //{
-            //    return BadRequest("Transfer failed due to insufficient balance or currency mismatch.");
-            //}
-
             _context.TransferItems.Add(transfer);
+            
             await _context.SaveChangesAsync();
 
             return Ok(transfer);
