@@ -36,10 +36,19 @@ To run this application, perform the following steps:
 - Select **Execute**.
 
 ## Implementation
+The Account API is implemented by using ASP.NET Core
 
 ### MVC Architecture
 
-This application follows the MVC architecture. The following diagram shows the design of the app:
+The application follows the MVC architecture. The following diagram shows the design of the app:
+
 ![MVC](img/MVC.png)
 
 **Source:** [ASP.NET Core Tutorial: First Web API](https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-8.0&tabs=visual-studio)
+
+### Data model
+The data model is illustrated by the following ER Diagram:
+
+![ER](img/Account.png)
+
+
